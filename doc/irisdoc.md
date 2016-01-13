@@ -11,15 +11,16 @@ github Url for presentation: https://github.com/nlsum1/DevelopingDataProducts/tr
 
 Function 1:  Predict
 ========================================================
-The application is mainly used to predict the Iris species, based on the following input entered by user:
+The application is mainly used to predict the Iris species, based on the following input entered by user: Sepal length, Sepal width, Petal length and petal width
 
-- Sepal length
-- Sepal Width
-- Petal length
-- Petal width
+The prediction model being used by this application, is built and trained by the package "RandomForest": 
 
 
-The prediction model being used by this application, is built and trained by the package "RandomForest", using the csv file from: 
+```r
+model <- train(Species~., data=iris, method="rf")
+```
+
+The data being used: 
 https://dataminingproject.googlecode.com/svn/DataMiningApp/datasets/Iris/iris.csv
 
 
